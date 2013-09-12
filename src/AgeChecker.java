@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 public class AgeChecker {
 
 	public static void main(String[] args) {
-		//Declaring and initializing variables with output
+		//Declaring and initializing variables and asking user for input
 		String firstName = JOptionPane.showInputDialog(null, "What is your first name?"); 
 		String lastName = JOptionPane.showInputDialog(null, "What is your last name?"); 
 		int yearOfBirth = Integer.parseInt(JOptionPane.showInputDialog(null, "What year were you born?")); 
@@ -29,7 +29,7 @@ public class AgeChecker {
 	
 	//Create method for full name
 	public static String concatenateNames(String fn, String ln) {
-		String fullName = (fn) + (ln); 
+		String fullName = fn + " " +ln; 
 		return fullName; 
 	}
 }
